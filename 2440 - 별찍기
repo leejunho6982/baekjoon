@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int star, jul, n;
+    scanf("%d",&n);
+    for(star = 0; star<=n; star++){
+        for(jul = star; jul<=n-1; jul++){
+            printf("*");
+        }
+         printf("\n");
+        }
+    }
+
+
