@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int star, jul, n;
+    scanf("%d",&n);
+    for(star = 1; star<=n; star++){
+        for(int space=star; space<=n-1; space++){
+            printf(" ");
+        }
+        for(jul = 1; jul<=star; jul++){
+            printf("*");
+        }
+            printf("\n");
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
