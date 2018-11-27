@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+
+   int number, i, score[100], sum=0;
+   scanf("%d", &number);
+   for(i=0; i<number; i++ )
+   {
+    scanf("%1d",&score[i]);
+       sum += score[i];
+    }
+        printf("%d", sum);
+        return 0;
+
+
+}
