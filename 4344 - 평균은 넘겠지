@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int number, i, num, score[1001], j;
+    double sum, twosum=0;
+    scanf("%d", &number);
+        if(1<=number<=1000){
+        for(j=0;j<number; j++){
+        sum = twosum =0;
+        scanf("%d", &num);
+        if(0<=num<=100){
+        for(i=0; i<num; i++){
+        scanf("%d", &score[i]);
+        sum += score[i];
+            }
+        sum /= num;
+        }
+
+        for(i=0; i<num; i++){
+            if(score[i] > sum){
+                twosum++;
+            }
+        }
+            twosum /= num;
+        printf("%.3f%%", twosum * 100);
+        }
+        }
+    return 0;
+}
